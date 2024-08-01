@@ -110,26 +110,26 @@
 // Q1 int areacircle( float r){
 //     return (3.14*r*r);
 // }
-#include <stdio.h>
-int digits(int, int);
-int main()
-{
-    int n, digit;
-    printf("Enter a number\n");
-    scanf("%d%d", &n, &digit);
-    int v = digits(n, digit);
-    printf(" this is same digit %d", v);
-}
-int digits(int n, int digit)
-{
-    int rem;
-    while (n)
-    {
-        rem = n % 10;
-        if (rem == digit)
+// #include <stdio.h>
+// int digits(int, int);
+// int main()
+// {
+//     int n, digit;
+//     printf("Enter a number\n");
+//     scanf("%d%d", &n, &digit);
+//     int v = digits(n, digit);
+//     printf(" this is same digit %d", v);
+// }
+// int digits(int n, int digit)
+// {
+//     int rem;
+//     while (n)
+//     {
+//         rem = n % 10;
+//         if (rem == digit)
 
-            return 1;
-        n = n / 10;
-    }
-    return 0;
-}
+//             return 1;
+//         n = n / 10;
+//     }
+//     return 0;
+// }

@@ -1,6 +1,6 @@
-#include <stdio.h>
-int main()
-{
+// #include <stdio.h>
+// int main()
+// {
     // Q1
     // int a;
     // printf("Enter month number");
@@ -194,9 +194,35 @@ int main()
     //  if(x%2==0){
     //     printf("It is even number %d",(x+1));
     //  }
-    //  else{
-    //     printf("it is odd number %d",x);
-    //  }
+//     //  else{
+//     //     printf("it is odd number %d",x);
+//     //  }
 
+//     return 0;
+// }
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int b,c,a,d;
+    float root1,root2,imge;
+    printf("Enter number\n");
+    scanf("%d%d%d",&a,&b,&c);
+    d=b*b-4*a*c;
+    switch (d>0)
+    {
+    case 1:root1=(-b+sqrt(d))/2*a;
+           root2=(-b-sqrt(d))/2*b;
+           printf("%d%d",root1,root2);
+        break;
+    case 0: switch(d<0){
+            case 1: root1=root1=-b/2*a;
+                    imge=sqrt(d)/2*a;
+                printf("%f %f %f",root1,root2,imge);
+                break;
+            case 0:root1=root2=-b/2*a;
+                 printf("%f %f",root2,root1);
+                 break;
+    }
+    }
     return 0;
 }
